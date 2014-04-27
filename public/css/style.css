@@ -5784,6 +5784,71 @@ body {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+.cnrflash {
+  /*Position correctly within container*/
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  z-index: 1;
+  /*Set overflow to hidden, to mask inner square*/
+  overflow: hidden;
+  /*Set size and add subtle rounding  		to soften edges*/
+  width: 100px;
+  height: 100px;
+  /* border-radius: 3px 5px 3px 0; */
+}
+.cnrflash-inner {
+  /*Set position, make larger then container and rotate 45 degrees*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+  height: 145px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -o-transform: rotate(45deg);
+  /* Opera */
+  -moz-transform: rotate(45deg);
+  /* Firefox */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  -webkit-transform-origin: 100% 100%;
+  /*Purely decorative effects to add texture and stuff*/
+  /* Safari and Chrome */
+  -ms-transform-origin: 100% 100%;
+  /* IE 9 */
+  -o-transform-origin: 100% 100%;
+  /* Opera */
+  -moz-transform-origin: 100% 100%;
+  /* Firefox */
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1, 1, 1, 0.2) 50%);
+  background-size: 4px,auto, auto,auto;
+  background-color: #3399f3;
+  box-shadow: 0 3px 3px 0 rgba(1, 1, 1, 0.5), 0 1px 0 0 rgba(1, 1, 1, 0.5), inset 0 -1px 8px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
+}
+.cnrflash-inner:before {
+  left: 1px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.cnrflash-inner:after {
+  right: 0;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.cnrflash-label {
+  position: absolute;
+  bottom: 0px;
+  left: 1px;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(1, 1, 1, 0.8);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
 .checkbox {
   text-align: left;
   color: #000;
@@ -5810,27 +5875,6 @@ body {
 }
 .vert-text h3 {
   color: #95a5a6;
-}
-.login-container {
-  width: 20em;
-  padding: 30px 10px 0px 10px;
-  margin-top: -190px;
-}
-.login-input {
-  border-radius: 10px 10px 0px 0px;
-  margin-bottom: -5px !important;
-  border-bottom: 1px solid rgba(55, 55, 55, 0.2);
-  border-top: 1px solid rgba(55, 55, 55, 0.58);
-  border-right: 1px solid rgba(55, 55, 55, 0.58);
-  border-left: 1px solid rgba(55, 55, 55, 0.58);
-}
-.password-input {
-  border-radius: 0px 0px 10px 10px;
-  border-top: 1px solid rgba(55, 55, 55, 0.2);
-  border-bottom: 1px solid rgba(55, 55, 55, 0.58);
-  border-right: 1px solid rgba(55, 55, 55, 0.58);
-  border-left: 1px solid rgba(55, 55, 55, 0.58);
-  margin-bottom: 20px;
 }
 /**, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -5935,8 +5979,8 @@ body {
   transition: all 0.2s ease 0s;
 }
 .sidebar-nav li > a.btn {
-  margin: 15px 10px 0 0;
-  padding: 5px 15px 5px 0px;
+  margin: 12px 10px 0 0;
+  padding: 10px 20px 10px 5px;
 }
 .header {
   display: table;
@@ -6036,7 +6080,7 @@ i.service-icon:hover {
 .portfolio {
   padding: 50px 0;
 }
-.portfolio-item {
+.lesson-item {
   margin-bottom: 25px;
 }
 .img-portfolio {
