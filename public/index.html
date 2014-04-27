@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta content=
+  "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="" name="description">
+  <meta content="Jonathan Paul Guidice" name="author">
+
+  <title>a7 version2 alpha</title><!-- a7 core CSS -->
+  <link href="css/style.css" rel="stylesheet"><!-- Add custom CSS here -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Side Menu -->
+  <a class="btn btn-lg toggle" href="#" id="menu-toggle"><i class="fa fa-bars fa-3x"></i></a>
+
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li style="list-style: none"><a class="btn btn-lg pull-right" href="#" id="menu-close"><i class="fa fa-times fa-2x"></i></a></li>
+
+      <li class="sidebar-brand"><a href="#">[username]</a></li>
+
+      <li class="login"><a href="#top"><i class="fa fa-key list"></i> Login</a></li>
+
+      <li class="dashboard"><a href="#profile"><i class="fa fa-user list"></i> Profile</a></li>
+
+      <li class="lessons"><a href="#lessons"><i class="fa fa-pencil list"></i> Lessons</a></li>
+
+      <li class="reports"><a href="#reports"><i class="fa fa-book list"></i>  Reports</a></li>
+    </ul>
+  </div><!-- /Side Menu -->
+  <!-- Full Page Image Header Area -->
+
+  <div class="header backstretch" id="top">
+    <div class="vert-text">
+      <div class="row" style="text-align:center">
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4">
+
+          	<form class="form-signin">
+          		<h1 class="form-signin-heading text-muted"><img src=
+              "img/a7_logo.png" width="60%"></h1>
+          		<input type="text" class="form-control" placeholder="Email address" required="" autofocus="">
+          		<input type="password" class="form-control" placeholder="Password" required="">
+          		<button class="btn btn-lg btn-info btn-block" type="submit">
+          			Sign In
+          		</button>
+          	</form>
+        </div>
+
+        <div class="col-md-4"></div>
+      </div><br>
+      <br>
+    </div>
+  </div><!-- /Full Page Image Header Area -->
+  <!-- Register-->
+  <!--
+<div id="intro" class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Neque porro quisquam est qui</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisl velit, pretium at auctor a, <a target="_blank" href="">vulputate ut mi. </a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+  <!-- /Intro -->
+  <!-- Profile -->
+
+  <div class="profile" id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">My Profile</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-6 profile-pic" style=
+        "text-align: center">
+          <a href="#project-link"><img class="img-responsive img-circle" src=
+          "http://placehold.it/200x200"></a>
+        </div>
+
+        <div class="col-md-8 col-sm-8 col-xs-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Overall Progress</h3>
+            </div>
+
+            <div class="panel-body">
+              <small style="color:black;">Title 1</small>
+
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-success" style=
+                "width: 40%"></div>
+              </div><small style="color:black;">Title 2</small>
+
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-info" style="width: 20%">
+                </div>
+              </div><small style="color:black;">Title 3</small>
+
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-warning" style=
+                "width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="media">
+            <a class="pull-left" href="#"><img alt="..." class=
+            "media-object img-thumbnail sky-thumb" src="./img/red_dragon.png"
+            width="150px"></a>
+
+            <div class="media-body">
+              <h3 class="media-heading">Subject</h3>
+
+              <h4 class="media-heading">92%</h4>
+
+              <h5 class="media-heading"><strong>13</strong> out of
+              <strong>32</strong></h5>Neque porro quisquam est qui.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="media">
+            <a class="pull-left" href="#"><img alt="..." class=
+            "media-object img-thumbnail sky-thumb" src=
+            "./img/yellow_dragon.png" width="150px"></a>
+
+            <div class="media-body">
+              <h3 class="media-heading">Subject</h3>
+
+              <h4 class="media-heading">92%</h4>
+
+              <h5 class="media-heading"><strong>13</strong> out of
+              <strong>32</strong></h5>Neque porro quisquam est qui.
+            </div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="media">
+            <a class="pull-left" href="#"><img alt="..." class=
+            "media-object img-thumbnail sky-thumb" src="./img/pink_dragon.png"
+            width="150px"></a>
+
+            <div class="media-body">
+              <h3 class="media-heading">Subject</h3>
+
+              <h4 class="media-heading">92%</h4>
+
+              <h5 class="media-heading"><strong>13</strong> out of
+              <strong>32</strong></h5>Neque porro quisquam est qui.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="media">
+            <a class="pull-left" href="#"><img alt="..." class=
+            "media-object img-thumbnail sky-thumb" src="./img/blue_dragon.png"
+            width="150px"></a>
+
+            <div class="media-body">
+              <h3 class="media-heading">Subject</h3>
+
+              <h4 class="media-heading">92%</h4>
+
+              <h5 class="media-heading"><strong>13</strong> out of
+              <strong>32</strong></h5>Neque porro quisquam est qui.
+            </div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="media">
+            <a class="pull-left" href="#"><img alt="..." class=
+            "media-object img-thumbnail sky-thumb" src="./img/rock_dragon.png"
+            width="150px"></a>
+
+            <div class="media-body">
+              <h3 class="media-heading">Subject</h3>
+
+              <h4 class="media-heading">92%</h4>
+
+              <h5 class="media-heading"><strong>13</strong> out of
+              <strong>32</strong></h5>Neque porro quisquam est qui.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="media">
+            <a class="pull-left" href="#"><img alt="..." class=
+            "media-object img-thumbnail sky-thumb" src=
+            "./img/purple_dragon.png" width="150px"></a>
+
+            <div class="media-body">
+              <h3 class="media-heading">Subject</h3>
+
+              <h4 class="media-heading">92%</h4>
+
+              <h5 class="media-heading"><strong>13</strong> out of
+              <strong>32</strong></h5>Neque porro quisquam est qui.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!--
+<div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Our Services</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-rocket"></i>
+              <h4>Spacecraft Repair</h4>
+              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-magnet"></i>
+              <h4>Problem Solving</h4>
+              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-shield"></i>
+              <h4>Blacksmithing</h4>
+              <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-pencil"></i>
+              <h4>Pencil Sharpening</h4>
+              <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+-->
+  </div><!-- /Profile -->
+  <!-- Lessons -->
+
+  <div class="services" id="lessons">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Lessons</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <h4><a href="#project-link">Name</a></h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <h4><a href="#project-link">Name</a></h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <h4><a href="#project-link">Name</a></h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <a href="#project-link"><img class="img-responsive" src=
+          "http://placehold.it/700x400"></a>
+
+          <h3><a href="#project-link">Project Name</a></h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+
+            <li class="active"><a href="#">1</a></li>
+
+            <li><a href="#">2</a></li>
+
+            <li><a href="#">3</a></li>
+
+            <li><a href="#">4</a></li>
+
+            <li><a href="#">5</a></li>
+
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- /Lessons -->
+    <!-- Callout -->
+    <!--
+<div class="callout">
+      <div class="vert-text">
+        <h1>A Dramatic Text Area</h1>
+      </div>
+    </div>
+-->
+    <!-- /Callout -->
+    <!-- Call to Action -->
+
+    <div class="call-to-action" id="reports">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">Reports</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+
+          <div class="col-md-3 portfolio-item">
+            <a href="portfolio-item.html"><img class="img-responsive" src=
+            "http://placehold.it/750x450"></a>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <ul class="pagination">
+              <li><a href="#">&laquo;</a></li>
+
+              <li class="active"><a href="#">1</a></li>
+
+              <li><a href="#">2</a></li>
+
+              <li><a href="#">3</a></li>
+
+              <li><a href="#">4</a></li>
+
+              <li><a href="#">5</a></li>
+
+              <li><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>Neque porro quisquam est qui.</h3><a class=
+            "btn btn-lg btn-primary" href="#top">Click Me!</a> <a class=
+            "btn btn-lg btn-primary" href="#top">Look at Me!</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /Call to Action -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline"></ul>
+            <hr>
+
+            <p>Copyright &copy; iMedia 2013</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- /Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min-ck.js"></script> <script src="js/bootstrap.min-ck.js"></script> <script src="js/jquery.backstretch.min.js"></script>
+<!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
+     <script>
+$( document ).ready(function() {
+      $(".header").backstretch("./img/Beijing.jpg");
+    });
+    </script> <script>
+  $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+    </script> <script>
+  $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+    </script> <script>
+$(function() {
+
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+              || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  </div>
+</body>
+</html>

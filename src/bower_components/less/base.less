@@ -1,0 +1,289 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.checkbox {
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+}
+.fpassword {
+    a {
+        line-height:3em;
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+        cursor: hand;
+    }
+}
+.vert-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 50px;
+    h1 {
+        padding-top: 20px;
+        font-size: 5.3em;
+        font-weight: 700;
+        color: #95a5a6;
+    }
+    h3 {
+        color: #95a5a6;
+    }
+}
+.login-container {
+    width: 20em;
+    padding: 30px 10px 0px 10px;
+    margin-top: -190px;
+}
+.login-input {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: -5px !important;
+    border-bottom: 1px solid rgba(55,55,55,0.2);
+    border-top: 1px solid rgba(55,55,55,0.58);
+    border-right: 1px solid rgba(55,55,55,0.58);
+    border-left: 1px solid rgba(55,55,55,0.58);
+}
+.password-input {
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid rgba(55,55,55,0.2);
+    border-bottom: 1px solid rgba(55,55,55,0.58);
+    border-right: 1px solid rgba(55,55,55,0.58);
+    border-left: 1px solid rgba(55,55,55,0.58);
+    margin-bottom: 20px;
+}
+/**, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/#sidebar-wrapper {
+    margin-right: -250px;
+    right: 0;
+    width: 250px;
+    background: #282b2f;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    color: #95a5a6;
+    li {
+        line-height: 70px;
+        text-indent: 8px;
+        a {
+            color: rgb(236, 240, 241);
+            display: block;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.2);
+            text-decoration: none;
+        }
+    }
+    a {
+        .list {
+            width: 14px;
+            margin-right: 40px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .login {
+        border-left: 6px solid #3498db;
+    }
+    .dashboard {
+        border-left: 6px solid #2980b9;
+    }
+    .lessons {
+        border-left: 6px solid #3498db;
+    }
+    .reports {
+        border-left: 6px solid #2980b9;
+    }
+    .about {
+        border-left: 6px solid #3498db;
+    }
+    .contact {
+        border-left: 6px solid #2980b9;
+    }
+    & > .sidebar-brand {
+        height: 75px;
+        line-height: 80px;
+        font-size: 20px;
+        margin-left: 5px;
+        a {
+            color: rgb(236, 240, 241);
+        }
+        a:hover {
+            color: #fff;
+            background: none;
+        }
+    }
+}
+.sidebar-nav li a:active,.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+#menu-toggle {
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.sidebar-nav {
+  li > a.btn {
+    margin: 15px 10px 0 0;
+    padding: 5px 15px 5px 0px;
+  }
+}
+.header {
+    display: table;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.intro {
+    padding: 50px 0;
+}
+.services {
+    background: #f1c40f;
+    padding: 50px 0;
+    color: #ffffff;
+}
+.service-item {
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+i.service-icon {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+}
+i.service-icon:hover {
+    font-size: 68px;
+    font-size: 68px;
+}
+.score-container {
+    padding:0px 50px;
+}
+.score {
+    font-weight: 800;
+    font-size: 4em;
+    padding: 0px 0px 5px 0px;
+}
+.profile {
+    background: #34AADC;
+    padding: 50px 0;
+    color: #ffffff;
+}
+.profile-pic {
+    padding: 15px 0px 0px 0px;
+}
+.sky-thumb {
+    background-color: #f5f5f5;
+}
+/*
+.panel-sky {
+    border-color: #bce8f1;
+		& > .panel-heading {
+        color: #3a87ad;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        + {
+            .panel-collapse {
+                .panel-body {
+                    border-top-color: #bce8f1;
+                }
+            }
+        }
+    }
+    & > .panel-footer {
+        + {
+            .panel-collapse {
+                .panel-body {
+                    border-bottom-color: #bce8f1;
+                }
+            }
+        }
+    }
+}
+*/
+.callout {
+    color: #ffffff;
+    display: table;
+    height: 400px;
+    width: 100%;
+    background: url(../img/section-two.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.portfolio {
+    padding: 50px 0;
+}
+.portfolio-item {
+    margin-bottom: 25px;
+}
+.img-portfolio {
+    margin: 0 auto;
+}
+.call-to-action {
+    color: #ffffff;
+    background: #9b59b6;
+    padding: 50px 0;
+    .btn {
+        margin: 10px;
+    }
+}
+footer {
+    padding: 100px 0;
+}
