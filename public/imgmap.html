@@ -1,0 +1,96 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> CSS play | Responsive image map </title>
+<meta name="Keywords" content="style, cascading, sheets, Experiments, code, CSSplay, Stu, Nicholls, demonstrations, responsive, image, map, touch, screen, android, OS, iOS, iPad" />
+<meta name="Description" content=" A responsive image map suitable for all modern browsers without javascript" />
+
+<meta name="Author" content="Stu Nicholls" />
+<style type="text/css">
+/* General styles */
+html, body {padding:0; margin:0; width:100%; min-height:100%;}
+.wrapper {width:100%; height:100%;}
+.page {width:100%; max-width:800px; margin:0 auto;}
+h1,h3,h4,p {margin:0; padding:3px 0;}
+
+/* Image map styles */
+.imageMap {width:100%; position:relative; margin-bottom:200px;}
+.imageMap img {display:block; width:100%; border-radius:20px;}
+.imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0; visibility:hidden;}
+.imageMap a {display:block; position:absolute; background:#000; z-index:100; opacity:0.2; filter: alpha(opacity=20); border:1px solid transparent; border-radius:10px;}
+.imageMap a.p1 {left:11%; top:5%; width:25%; height:34%;}
+.imageMap a.p2 {left:76%; top:13%; width:21%; height:30%;}
+.imageMap a.p3 {left:5%; top:44%; width:22%; height:42%;}
+.imageMap a.p4 {left:28%; top:41%; width:26.5%; height:43%;}
+.imageMap a.p5 {left:55%; top:64%; width:15%; height:26%;}
+.imageMap a.p6 {left:72%; top:53%; width:25%; height:35%;}
+.imageMap a + p {position:absolute; left:0%; top:102%; width:100%; color:#000; display:none;}
+
+.imageMap:hover .hotspots {visibility:visible;}
+.imageMap p strong {display:block; padding:0; margin:0; font: bold 25px/30px 'times new roman',serif; color:#000;}
+.imageMap p {padding:0; margin:0; font: normal 18px/22px 'times new roman',serif; color:#444;}
+
+.imageMap b {display:block; position:absolute; background:url(trans.gif); z-index:200; opacity:0.2; filter: alpha(opacity=20); padding:1px;
+-webkit-transition:0.75s;
+-moz-transition:0.75s;
+-o-transition:0.75s;
+transition:0.75s;
+}
+.imageMap b.b1 {left:11%; top:5%; width:25%; height:34%;}
+.imageMap b.b2 {left:76%; top:13%; width:21%; height:30%;}
+.imageMap b.b3 {left:5%; top:44%; width:22%; height:42%;}
+.imageMap b.b4 {left:28%; top:41%; width:26.5%; height:43%;}
+.imageMap b.b5 {left:55%; top:64%; width:15%; height:26%;}
+.imageMap b.b6 {left:72%; top:53%; width:25%; height:35%;}
+
+.imageMap .hotspots div:hover b {width:0; padding:0;}
+.imageMap .hotspots div:hover p {display:block;}
+.imageMap .hotspots div:hover a {background:#fff; z-index:100; opacity:0.3; filter: alpha(opacity=30); border:1px solid #000;}
+</style>
+</head>
+
+<body>
+<div class="wrapper" onclick="">
+	<div class="page">
+		<h1>CSS play - Responsive Image Map</h1>
+		<h4>7th June 2013</h4>
+		<h3>For IE7+, Firefox, Chrome, Safari, Opera, iOS and Android OS, including Touch Screen Devices</h3>
+		<div class="imageMap" aria-haspopup="true">
+			<img src="img/spaceship_723.jpg" alt="" />
+			<div class="hotspots">
+				<div title="click/tap to go to the monkey page"><a href="http://en.wikipedia.org/wiki/Monkey" class="p1" rel="nofollow" aria-haspopup="false"></a><p><strong>Monkey</strong>Monkeys are generally considered to be intelligent. Unlike apes, monkeys usually have tails.</p><b class="b1"></b></div>
+				<div title="click/tap to go to the vulture page"><a href="http://en.wikipedia.org/wiki/Vulture" class="p2" rel="nofollow" aria-haspopup="false"></a><p><strong>Vulture</strong>A particular characteristic of many vultures is a bald head, devoid of normal feathers.</p><b class="b2"></b></div>
+				<div title="click/tap to go to the ostrich page"><a href="http://en.wikipedia.org/wiki/Ostrich" class="p3" rel="nofollow" aria-haspopup="false"></a><p><strong>Ostrich</strong>The ostrich is farmed around the world, particularly for its feathers, which are decorative and are also used as feather dusters.</p><b class="b3"></b></div>
+				<div title="click/tap to go to the zebra page"><a href="http://en.wikipedia.org/wiki/Zebra" class="p4" rel="nofollow" aria-haspopup="false"></a><p><strong>Zebra</strong>Zebras are several species of African equids (horse family) united by their distinctive black and white stripes. Their stripes come in different patterns, unique to each individual.</p><b class="b4"></b></div>
+				<div title="click/tap to go to the snake page"><a href="http://en.wikipedia.org/wiki/Snake" class="p5" rel="nofollow" aria-haspopup="false"></a><p><strong>Snake</strong>Snakes are elongate, legless, carnivorous reptiles of the suborder Serpentes that can be distinguished from legless lizards by their lack of eyelids and external ears.</p><b class="b5"></b></div>
+				<div title="click/tap to go to the tiger page"><a href="http://en.wikipedia.org/wiki/Tiger" class="p6" rel="nofollow" aria-haspopup="false"></a><p><strong>Tiger</strong>Tigers are among the most recognisable and popular of the world's charismatic megafauna. They have featured prominently in ancient mythology and folklore.</p><b class="b6"></b></div>
+			</div>
+		</div>
+		<p>INSTRUCTIONS</p>
+		<p>Hover/tap on the image to show the six hotspots, then hover/tap on a hotspot to show the information text, and finally click/tap the same hotspot to go to the link page.</p>
+		<p>For touch screen devices tap anywhere outside of the image to close any hotspots and information text.</p>
+		<p>This has been tested in the following browsers:</p>
+		<ul class="lists">
+			<li>IE7</li>
+			<li>IE8</li>
+			<li>IE9</li>
+			<li>IE10 &amp; IE10 Touch Screens</li>
+			<li>Firefox</li>
+			<li>Chrome</li>
+			<li>Safari</li>
+			<li>Opera</li>
+			<li>iPad</li>
+			<li>iPhone</li>
+			<li>iPod Touch</li>
+			<li>Android Firefox including Touch Screens</li>
+			<li>Android Chrome including Touch Screens</li>
+			<li>Android Opera including Touch Screens</li>
+		</ul>
+		<p><a href="../comments/comments.php?comment_id=Responsive%20Image%20Map" title="CSSplay comments" class="comments">COMMENTS</a></p>
+		<p>Copyright &copy;2013 stu nicholls - cssplay.co.uk</p>
+	</div>
+</div>
+</body>
+</html>
