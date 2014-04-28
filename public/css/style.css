@@ -6440,9 +6440,7 @@ footer {
   opacity: 0.2;
   filter: alpha(opacity=20);
   border: 2px dashed red !important;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 .imageMap a.p1 {
   left: 2%;
