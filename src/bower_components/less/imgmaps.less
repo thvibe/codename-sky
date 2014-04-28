@@ -3,9 +3,12 @@
 .imageMap img {display:block; width:100%; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
 .imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0;padding-bottom:40px;}
 .imageMap a {display:block; position:absolute; background:#000; z-index:100; opacity:0.2; filter: alpha(opacity=20); border:1px solid transparent; border-radius:10px;}
-.imageMap a[class="p1"]{
+.imageMap a.active-stage {
   background:red; z-index:100; opacity:0.2; filter: alpha(opacity=20);
-  border: 2px dashed red;
+  border: 2px dashed red !important;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .imageMap a.p1  {left:2%; top:45%; width:22%; height:25%;}
 .imageMap a.p2 {left:76%; top:13%; width:21%; height:30%;}
