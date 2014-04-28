@@ -6361,11 +6361,18 @@ button[type=""] {
   border: 1px solid transparent;
   border-radius: 10px;
 }
+.imageMap a[class="p1"] {
+  background: red;
+  z-index: 100;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  border: 2px dashed red;
+}
 .imageMap a.p1 {
-  left: 11%;
-  top: 5%;
-  width: 25%;
-  height: 34%;
+  left: 2%;
+  top: 45%;
+  width: 22%;
+  height: 25%;
 }
 .imageMap a.p2 {
   left: 76%;
@@ -6374,10 +6381,10 @@ button[type=""] {
   height: 30%;
 }
 .imageMap a.p3 {
-  left: 5%;
-  top: 44%;
-  width: 22%;
-  height: 42%;
+  left: 11%;
+  top: 5%;
+  width: 25%;
+  height: 34%;
 }
 .imageMap a.p4 {
   left: 28%;
@@ -6433,10 +6440,10 @@ button[type=""] {
   transition: 0.75s;
 }
 .imageMap b.b1 {
-  left: 11%;
-  top: 5%;
-  width: 25%;
-  height: 34%;
+  left: 5%;
+  top: 45%;
+  width: 22%;
+  height: 10%;
 }
 .imageMap b.b2 {
   left: 76%;
@@ -6445,10 +6452,10 @@ button[type=""] {
   height: 30%;
 }
 .imageMap b.b3 {
-  left: 5%;
-  top: 44%;
-  width: 22%;
-  height: 42%;
+  left: 11%;
+  top: 5%;
+  width: 25%;
+  height: 34%;
 }
 .imageMap b.b4 {
   left: 28%;
