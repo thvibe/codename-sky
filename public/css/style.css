@@ -6333,6 +6333,8 @@ button[type=""] {
 .imageMap {
   width: 100%;
   position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 .imageMap img {
   display: block;
@@ -6347,7 +6349,7 @@ button[type=""] {
   position: absolute;
   left: 0;
   top: 0;
-  visibility: hidden;
+  padding-bottom: 40px;
 }
 .imageMap a {
   display: block;
