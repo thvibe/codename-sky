@@ -13,7 +13,7 @@
 
   <title>a7 version2 alpha</title><!-- a7 core CSS -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/magic.min.css.css" rel="stylesheet">
+  <link href="css/magic.min.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
 
 </head>
@@ -21,6 +21,34 @@
 <body>
   <!-- Side Menu -->
   <a class="btn btn-lg toggle" href="#" id="menu-toggle"><i class="fa fa-bars fa-3x"></i></a>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      <div class="imageMap" aria-haspopup="true">
+        <img src="img/spaceship_723.jpg" class="img-responsive" alt="" />
+        <div class="hotspots">
+          <div title="click/tap to go to the monkey page"><a href="http://en.wikipedia.org/wiki/Monkey" class="p1" rel="nofollow" aria-haspopup="false"></a><p><strong>stage 1</strong></p><b class="b1"></b></div>
+          <div title="click/tap to go to the vulture page"><a href="http://en.wikipedia.org/wiki/Vulture" class="p2" rel="nofollow" aria-haspopup="false"></a><p><strong>stage 2</strong></p><b class="b2"></b></div>
+          <div title="click/tap to go to the ostrich page"><a href="http://en.wikipedia.org/wiki/Ostrich" class="p3" rel="nofollow" aria-haspopup="false"></a><p><strong>stage 3</strong></p><b class="b3"></b></div>
+          <div title="click/tap to go to the zebra page"><a href="http://en.wikipedia.org/wiki/Zebra" class="p4" rel="nofollow" aria-haspopup="false"></a><p><strong>stage 4</strong></p><b class="b4"></b></div>
+          <div title="click/tap to go to the snake page"><a href="http://en.wikipedia.org/wiki/Snake" class="p5" rel="nofollow" aria-haspopup="false"></a><p><strong>stage 5</strong></p><b class="b5"></b></div>
+          <div title="click/tap to go to the tiger page"><a href="http://en.wikipedia.org/wiki/Tiger" class="p6" rel="nofollow" aria-haspopup="false"></a><p><strong>stage 6</strong></p><b class="b6"></b></div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    </div>
+  </div>
 
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
@@ -48,10 +76,10 @@
 
           	<form class="form-signin">
           		<h1 class="form-signin-heading text-muted"><img src=
-              "img/a7_logo.png" width="60%"></h1>
+              "img/a7_logo.png" width="60%" alt="logo" /></h1>
           		<input type="text" class="form-control" placeholder="Email address" required="" autofocus="">
           		<input type="password" class="form-control" placeholder="Password" required="">
-          		<button class="btn btn-lg btn-info btn-block" type="submit">
+          		<button class="btn btn-lg btn-info btn-block login-home" type="submit" data-toggle="modal" data-target="#myModal">
           			Log In
           		</button>
           	</form>
@@ -282,6 +310,9 @@
       </div>
 
       <div class="row">
+
+
+
         <div class="col-md-4 col-sm-6" id="lesson_item_1">
           <div class="cnrflash">
             <div class="cnrflash-inner">
@@ -513,7 +544,10 @@
   </div>
   <!-- Bootstrap core JavaScript -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.min-ck.js"></script> <script src="js/bootstrap.min-ck.js"></script> <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/jquery.min-ck.js"></script>
+  <script src="js/bootstrap.min-ck.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/jquery.rwdImageMaps.js"></script>
 <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
    <script>
 $( document ).ready(function() {
@@ -549,12 +583,10 @@ $(function() {
     });
   </script>
   <script>
-    $("#lesson_item_1").on('click', function (e) {
-      e.preventDefault();
-      alert("wtf");
-     $('#lesson_item_1').removeClass('col-md-4 col-sm-4 col-xs-6').addClass('col-md-8');
-
-   });
+  $(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+  });
   </script>
+
 </body>
 </html>
