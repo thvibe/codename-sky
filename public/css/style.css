@@ -5129,15 +5129,15 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .modal-header {
   padding: 15px;
@@ -6105,6 +6105,7 @@ footer {
 /* Compiled in Codekit - base style for a7 */
 .login-home {
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 .form-signin {
   max-width: 280px;
@@ -6422,7 +6423,7 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 .imageMap a {
   display: block;
@@ -6444,15 +6445,15 @@ footer {
 }
 .imageMap a.p1 {
   left: 2%;
-  top: 45%;
+  top: 44%;
   width: 22%;
   height: 25%;
 }
 .imageMap a.p2 {
-  left: 76%;
-  top: 13%;
-  width: 21%;
-  height: 30%;
+  left: 28%;
+  top: 56%;
+  width: 22%;
+  height: 25%;
 }
 .imageMap a.p3 {
   left: 11%;
@@ -6461,10 +6462,10 @@ footer {
   height: 34%;
 }
 .imageMap a.p4 {
-  left: 28%;
-  top: 41%;
-  width: 26.5%;
-  height: 43%;
+  left: 76%;
+  top: 13%;
+  width: 21%;
+  height: 30%;
 }
 .imageMap a.p5 {
   left: 55%;
@@ -6486,9 +6487,6 @@ footer {
   color: #000;
   display: none;
   padding-bottom: 20px;
-}
-.imageMap:hover .hotspots {
-  visibility: visible;
 }
 .imageMap p strong {
   display: block;
@@ -6521,10 +6519,10 @@ footer {
   height: 10%;
 }
 .imageMap b.b2 {
-  left: 76%;
-  top: 13%;
-  width: 21%;
-  height: 30%;
+  left: 28%;
+  top: 41%;
+  width: 26.5%;
+  height: 43%;
 }
 .imageMap b.b3 {
   left: 11%;
@@ -6533,10 +6531,10 @@ footer {
   height: 34%;
 }
 .imageMap b.b4 {
-  left: 28%;
-  top: 41%;
-  width: 26.5%;
-  height: 43%;
+  left: 76%;
+  top: 13%;
+  width: 21%;
+  height: 30%;
 }
 .imageMap b.b5 {
   left: 55%;
@@ -6565,11 +6563,95 @@ footer {
   border: 1px solid #000;
 }
 /* Compiled in Codekit - animations  */
-@media (min-width: 992px) {
-  .modal,
-  .modal-title {
+.modal-body,
+.modal-footer {
+  font-size: .9em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal-body,
+  .modal-footer {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .modal-body,
+  .modal-footer {
     font-size: 1.3em;
   }
 }
+@media (min-width: 1200px) {
+  .modal-body,
+  .modal-footer {
+    font-size: 1.4em;
+  }
+}
+.modal-title {
+  font-size: 1.3em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal-title {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .modal-title {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-title {
+    font-size: 2em;
+  }
+}
+#dragonAllianceModal .modal-body {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #dragonAllianceModal .modal-body {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #dragonAllianceModal .modal-body {
+    padding-bottom: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  #dragonAllianceModal .modal-body {
+    padding-bottom: 60px;
+  }
+}
 /* Compiled in Codekit - modal  */
+.rating2 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 18px;
+  margin-top: -10px;
+}
+.rating2 span.star,
+.star-active {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+}
+.rating2 span.star:hover {
+  cursor: pointer;
+}
+.rating2 span.star:before {
+  content: "\f006";
+  padding-right: 2px;
+  color: #999;
+}
+.rating2 span.star-active:before {
+  content: "\f005";
+  padding-right: 2px;
+  color: #ffe135;
+}
+.rating2 span.star:hover:before,
+.rating2 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #ffe135;
+}
+/* Compiled in Codekit - rating  */
 /*# sourceMappingURL=style.css.map */
