@@ -1,0 +1,21 @@
+// .rating {
+//     unicode-bidi: bidi-override;
+//     direction: rtl;
+//     & > span {
+//         display: inline-block;
+//         position: relative;
+//         width: 1.2em;
+//     }
+// }
+// .rating &>span:hover:before,.rating &>span:hover ~ span:before {
+//     content: "\2605";
+//     position: absolute;
+// }
+.rating2{unicode-bidi:bidi-override;direction:rtl;font-size:18px;
+ margin-top: -10px;}
+.rating2 span.star,.star-active{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block;}
+.rating2 span.star:hover{cursor:pointer;}
+.rating2 span.star:before{content:"\f006";padding-right:2px;color:#999;}
+.rating2 span.star-active:before{content:"\f005";padding-right:2px;color:#ffe135;}
+.rating2 span.star:hover:before,
+.rating2 span.star:hover~span.star:before{content:"\f005";color:#ffe135;}
