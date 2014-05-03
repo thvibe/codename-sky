@@ -6603,6 +6603,12 @@ footer {
     font-size: 2em;
   }
 }
+@media (max-width: 767px) {
+  .modal-title-details {
+    font-size: .7em;
+    line-height: 14px;
+  }
+}
 #dragonAllianceModal .modal-body {
   padding-bottom: 35px;
 }
@@ -6625,8 +6631,18 @@ footer {
 .rating2 {
   unicode-bidi: bidi-override;
   direction: rtl;
-  font-size: 18px;
+  font-size: 1.2em;
   margin-top: -10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .rating2 {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1200px) {
+  .rating2 {
+    font-size: 1.5em;
+  }
 }
 .rating2 span.star,
 .star-active {
