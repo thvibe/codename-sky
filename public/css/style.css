@@ -6407,8 +6407,8 @@ footer {
 .imageMap {
   width: 100%;
   position: relative;
-  margin-bottom: 5px;
-  padding-bottom: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 .imageMap img {
   display: block;
@@ -6590,58 +6590,79 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .modal-title {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .modal-title {
-    font-size: 1.7em;
+    font-size: 2.2em;
   }
 }
 @media (min-width: 1200px) {
   .modal-title {
-    font-size: 2em;
+    font-size: 2.4em;
   }
 }
-@media (max-width: 767px) {
+.modal-title-details {
+  font-size: .7em;
+  line-height: 12px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .modal-title-details {
-    font-size: .7em;
-    line-height: 14px;
+    font-size: 1.1em;
+    line-height: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .modal-title-details {
+    font-size: 1.2em;
+    line-height: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-title-details {
+    font-size: 1.4em;
+    line-height: 24px;
   }
 }
 #dragonAllianceModal .modal-body {
-  padding-bottom: 35px;
+  padding-bottom: 45px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #dragonAllianceModal .modal-body {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #dragonAllianceModal .modal-body {
-    padding-bottom: 55px;
+    padding-bottom: 65px;
   }
 }
 @media (min-width: 1200px) {
   #dragonAllianceModal .modal-body {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 }
 /* Compiled in Codekit - modal  */
 .rating2 {
   unicode-bidi: bidi-override;
   direction: rtl;
-  font-size: 1.2em;
-  margin-top: -10px;
+  font-size: 1.3em;
+  margin-top: -7px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .rating2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .rating2 {
+    font-size: 1.6em;
   }
 }
 @media (min-width: 1200px) {
   .rating2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 }
 .rating2 span.star,
