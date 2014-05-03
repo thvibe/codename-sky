@@ -1,20 +1,20 @@
 /* Image map styles */
-.imageMap {width:100%; position:relative;margin-bottom:20px;padding-bottom:10px;}
+.imageMap {width:100%; position:relative;margin-bottom:5px;padding-bottom:10px;}
 .imageMap img {display:block; width:100%; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
-.imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0;padding-bottom:40px;}
+.imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0;padding-bottom:10px;}
 .imageMap a {display:block; position:absolute; background:#000; z-index:100; opacity:0.2; filter: alpha(opacity=20); border:1px solid transparent; border-radius:10px;}
 .imageMap a.active-stage {
   background:red; z-index:100; opacity:0.2; filter: alpha(opacity=20);
   border: 2px dashed red !important;
   -webkit-animation-iteration-count: infinite;
 }
-.imageMap a.p1  {left:2%; top:45%; width:22%; height:25%;}
+.imageMap a.p1 {left:2%; top:45%; width:22%; height:25%;}
 .imageMap a.p2 {left:76%; top:13%; width:21%; height:30%;}
 .imageMap a.p3 {left:11%; top:5%; width:25%; height:34%;}
 .imageMap a.p4 {left:28%; top:41%; width:26.5%; height:43%;}
 .imageMap a.p5 {left:55%; top:64%; width:15%; height:26%;}
 .imageMap a.p6 {left:72%; top:53%; width:25%; height:35%;}
-.imageMap a + p {position:absolute; left:0%; top:102%; width:100%; color:#000; display:none;}
+.imageMap a + p {position:absolute; left:0%; top:100%; width:100%; color:#000; display:none; padding-bottom:20px;}
 
 .imageMap:hover .hotspots {visibility:visible;}
 .imageMap p strong {display:block; padding:0; margin:0;color:#000;}

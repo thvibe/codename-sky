@@ -1247,6 +1247,14 @@
 		"outputAbbreviatedPath": "\/src\/bower_components\/bootstrap\/test-infra\/README.html",
 		"outputPathIsSetByUser": 0
 		},
+	"\/src\/bower_components\/css\/modal.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/bower_components\/css\/modal.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/bower_components\/font-awesome\/CONTRIBUTING.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -9372,6 +9380,25 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/src\/bower_components\/less\/modal.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/bower_components\/less\/modal.less",
+		"outputAbbreviatedPath": "\/src\/bower_components\/css\/modal.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/src\/bower_components\/less\/style.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 1,
@@ -9469,7 +9496,7 @@
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
-	"browserRefreshDelay": 0.25,
+	"browserRefreshDelay": 0,
 	"coffeeAutoOutputPathRelativePath": "",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",

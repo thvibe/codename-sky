@@ -6406,7 +6406,7 @@ footer {
 .imageMap {
   width: 100%;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding-bottom: 10px;
 }
 .imageMap img {
@@ -6422,7 +6422,7 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .imageMap a {
   display: block;
@@ -6481,10 +6481,11 @@ footer {
 .imageMap a + p {
   position: absolute;
   left: 0%;
-  top: 102%;
+  top: 100%;
   width: 100%;
   color: #000;
   display: none;
+  padding-bottom: 20px;
 }
 .imageMap:hover .hotspots {
   visibility: visible;
@@ -6564,4 +6565,11 @@ footer {
   border: 1px solid #000;
 }
 /* Compiled in Codekit - animations  */
+@media (min-width: 992px) {
+  .modal,
+  .modal-title {
+    font-size: 1.3em;
+  }
+}
+/* Compiled in Codekit - modal  */
 /*# sourceMappingURL=style.css.map */
