@@ -6450,7 +6450,7 @@ footer {
   height: 25%;
 }
 .imageMap a.p2 {
-  left: 28%;
+  left: 29%;
   top: 56%;
   width: 22%;
   height: 25%;
@@ -6624,6 +6624,9 @@ footer {
     font-size: 1.4em;
     line-height: 24px;
   }
+}
+#dragonAllianceModal .course {
+  color: #555555;
 }
 #dragonAllianceModal .modal-body {
   padding-bottom: 45px;
