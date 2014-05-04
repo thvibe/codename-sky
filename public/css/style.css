@@ -5789,6 +5789,31 @@ body {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 7px 14px 8px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
 .cnrflash {
   position: absolute;
   top: -3px;
@@ -6485,7 +6510,7 @@ footer {
   position: absolute;
   left: 0%;
   top: 100%;
-  width: 80%;
+  width: 100%;
   color: #000;
   display: none;
   padding-top: 45px;
@@ -6494,6 +6519,15 @@ footer {
   .imageMap a + p {
     top: 88%;
   }
+}
+.imageMap button {
+  position: absolute;
+  left: 42%;
+  top: 125%;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8em;
 }
 .imageMap:hover .hotspots {
   visibility: visible;

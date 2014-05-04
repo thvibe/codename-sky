@@ -31,7 +31,16 @@
       <div class="imageMap" aria-haspopup="true">
         <img src="img/spaceship_723.jpg" class="img-responsive" alt="" />
         <div class="hotspots">
-          <div title="click/tap to go to Stage 1 - ABC"><a href="#" class="p1 active-stage animated infinate pulse" rel="nofollow" aria-haspopup="false"></a><p><strong class="course">Stage 1 - ABC <small> small description here</small></strong></p><b class="b1"></b></div>
+          <div title="click/tap to go to Stage 1 - ABC">
+           <a href="#" class="p1 active-stage animated infinate pulse" rel="nofollow" aria-haspopup="false"></a>
+           <p><strong class="course">Stage 1 - ABC</strong>
+<!--             <button href="#" type="button" class="btn btn-success btn-lg">Start <i class="fa fa-play"></i></button> -->
+            <button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-play"></i></button>
+            <a class="btn btn-block btn-social btn-facebook">
+        <i class="fa fa-facebook"></i> Sign in with Facebook
+      </a>
+           </p><b class="b1"></b>
+          </div>
           <div title="click/tap to go to Stage 1 - XYZ"><a href="#" class="p2" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 2 - <small class="course">XYZ</small></strong></p><b class="b2"></b></div>
           <div title="click/tap to go to the ostrich page"><a href="http://en.wikipedia.org/wiki/Ostrich" class="p3" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 3 - <small class="course">Vowel</small></strong></p><b class="b3"></b></div>
           <div title="click/tap to go to the zebra page"><a href="http://en.wikipedia.org/wiki/Zebra" class="p4" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 4 - <small class="course">Syllable</small></strong></p><b class="b4"></b></div>
@@ -550,15 +559,15 @@
   <!-- Bootstrap core JavaScript -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.min-ck.js"></script>
+  <script src="js/bootstrap.min-ck.js"></script>
+  <script src="js/jquery.rwdImageMaps.js"></script>
   <script src="js/jquery.backstretch.min.js"></script>
   <script>
   $(document).ready(function() {
-   $('.login-bg').backstretch("http://thvibes-imac.local:5757/public/img/Beijing2.jpg");
+   $('.login-bg').backstretch("img/Beijing2.jpg");
    $('img[usemap]').rwdImageMaps();
   });
   </script>
-  <script src="js/bootstrap.min-ck.js"></script>
-  <script src="js/jquery.rwdImageMaps.js"></script>
 <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
   <script>
 $("#menu-close").click(function(e) {
