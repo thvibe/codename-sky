@@ -1,12 +1,9 @@
- <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta content=
-  "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-  name="viewport">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport">
   <meta content="yes" name="apple-mobile-web-app-capable">
   <meta content="" name="description">
   <meta content="Jonathan Paul Guidice" name="author">
@@ -23,18 +20,18 @@
   <a class="btn btn-lg toggle" href="#" id="menu-toggle"><i class="fa fa-bars fa-3x"></i></a>
 
   <div class="modal fade" id="dragonAllianceModal" tabindex="-1" role="dialog" aria-labelledby="dragonAllianceModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
-      <div class="modal-header">
+<!--       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close &times;</button>
         <h4 class="modal-title" id="dragonAllianceModalLabel"><b>Dragon Alliance</b></h4>
         <h5 class="modal-title-details">The spaceship enters the space area around earth.The spaceship enters the space area around earth.</h5>
-      </div>
+      </div> -->
       <div class="modal-body">
       <div class="imageMap" aria-haspopup="true">
         <img src="img/spaceship_723.jpg" class="img-responsive" alt="" />
         <div class="hotspots">
-          <div title="click/tap to go to Stage 1 - ABC"><a href="#" class="p1 active-stage animated infinate pulse" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 1 - <small class="course">ABC</small></strong>Something about the course here</p><b class="b1"></b></div>
+          <div title="click/tap to go to Stage 1 - ABC"><a href="#" class="p1 active-stage animated infinate pulse" rel="nofollow" aria-haspopup="false"></a><p><strong class="course">Stage 1 - ABC <small> small description here</small></strong></p><b class="b1"></b></div>
           <div title="click/tap to go to Stage 1 - XYZ"><a href="#" class="p2" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 2 - <small class="course">XYZ</small></strong></p><b class="b2"></b></div>
           <div title="click/tap to go to the ostrich page"><a href="http://en.wikipedia.org/wiki/Ostrich" class="p3" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 3 - <small class="course">Vowel</small></strong></p><b class="b3"></b></div>
           <div title="click/tap to go to the zebra page"><a href="http://en.wikipedia.org/wiki/Zebra" class="p4" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 4 - <small class="course">Syllable</small></strong></p><b class="b4"></b></div>
@@ -42,13 +39,18 @@
           <div title="click/tap to go to the tiger page"><a href="http://en.wikipedia.org/wiki/Tiger" class="p6" rel="nofollow" aria-haspopup="false"></a><p><strong>Stage 6 - <small class="course">Onset Rhyme</small></strong></p><b class="b6"></b></div>
         </div>
       </div>
+      <div class="pull-left">
+       <h2 class="course-title"><b>Dragon Alliance</b></h2>
+      </div>
        <span class="rating2 pull-right">
           <span class="star"></span><span class="star"></span><span class="star-active"></span><span class="star-active"></span><span class="star-active"></span>
         </span>
       </div>
-<!--       <div class="modal-footer">
-        <i class="fa fa-info-circle"></i> <b>To start learning, tap on the red button!</b>
-      </div> -->
+      <div class="modal-footer">
+        <span class="pull-right">
+           <i class="fa fa-question-circle"></i>
+        </span>
+      </div>
     </div>
     </div>
   </div>
@@ -70,7 +72,7 @@
   </div><!-- /Side Menu -->
   <!-- Full Page Image Header Area -->
 
-  <div class="header backstretch" id="top">
+  <div class="header backstretch login-bg" id="top">
     <div class="vert-text">
       <div class="row" style="text-align:center">
         <div class="col-md-4"></div>
@@ -80,11 +82,11 @@
           	<form class="form-signin">
           		<h1 class="form-signin-heading text-muted"><img src=
               "img/a7_logo.png" width="60%" alt="logo" /></h1>
-          		<input type="text" class="form-control" placeholder="Username" required="" autofocus="">
+          		<input type="text" class="form-control" placeholder="Username" required="">
           		<input type="password" class="form-control" placeholder="Password" required="">
-          		<button class="btn btn-lg btn-info btn-block login-home" type="submit" data-toggle="modal" data-target="#dragonAllianceModal">
+          		<a class="btn btn-lg btn-info btn-block login-home" type="submit" data-toggle="modal" data-target="#dragonAllianceModal">
           			<b>Log In</b>
-          		</button>
+          		</a>
           	</form>
         </div>
 
@@ -548,15 +550,17 @@
   <!-- Bootstrap core JavaScript -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.min-ck.js"></script>
-  <script src="js/bootstrap.min-ck.js"></script>
   <script src="js/jquery.backstretch.min.js"></script>
+  <script>
+  $(document).ready(function() {
+   $('.login-bg').backstretch("http://thvibes-imac.local:5757/public/img/Beijing2.jpg");
+   $('img[usemap]').rwdImageMaps();
+  });
+  </script>
+  <script src="js/bootstrap.min-ck.js"></script>
   <script src="js/jquery.rwdImageMaps.js"></script>
 <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
-   <script>
-$( document ).ready(function() {
-    $(".header").backstretch("./img/Beijing.jpg");
-  });
-  </script> <script>
+  <script>
 $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
@@ -585,11 +589,7 @@ $(function() {
       });
     });
   </script>
-  <script>
-  $(document).ready(function(e) {
-    $('img[usemap]').rwdImageMaps();
-  });
-  </script>
+
 
 </body>
 </html>

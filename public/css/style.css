@@ -5173,7 +5173,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 700px;
     margin: 30px auto;
   }
   .modal-content {
@@ -5790,7 +5790,6 @@ body {
   border-radius: 10px;
 }
 .cnrflash {
-  /*Position correctly within container*/
   position: absolute;
   top: -3px;
   right: 10px;
@@ -6132,7 +6131,8 @@ footer {
   border-right-style: solid;
   border-bottom-style: none;
   border-left-style: solid;
-  border-color: #000;
+  border-color: #777;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
@@ -6142,8 +6142,9 @@ footer {
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  border-color: #000000;
+  border-color: #777;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .form-signin .form-signin-heading,
 .form-signin {
@@ -6442,6 +6443,7 @@ footer {
   filter: alpha(opacity=20);
   border: 2px dashed red !important;
   -webkit-animation-iteration-count: infinite;
+  display: block !important;
 }
 .imageMap a.p1 {
   left: 2%;
@@ -6483,10 +6485,18 @@ footer {
   position: absolute;
   left: 0%;
   top: 100%;
-  width: 100%;
+  width: 80%;
   color: #000;
   display: none;
-  padding-bottom: 20px;
+  padding-top: 45px;
+}
+@media (max-width: 767px) {
+  .imageMap a + p {
+    top: 88%;
+  }
+}
+.imageMap:hover .hotspots {
+  visibility: visible;
 }
 .imageMap p strong {
   display: block;
@@ -6502,7 +6512,6 @@ footer {
 .imageMap b {
   display: block;
   position: absolute;
-  background: url(trans.gif);
   z-index: 200;
   opacity: 0.2;
   filter: alpha(opacity=20);
@@ -6563,26 +6572,33 @@ footer {
   border: 1px solid #000;
 }
 /* Compiled in Codekit - animations  */
-.modal-body,
-.modal-footer {
+.modal-body {
   font-size: .9em;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .modal-body,
-  .modal-footer {
+  .modal-body {
     font-size: 1.2em;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .modal-body,
-  .modal-footer {
+  .modal-body {
     font-size: 1.3em;
   }
 }
 @media (min-width: 1200px) {
-  .modal-body,
-  .modal-footer {
+  .modal-body {
     font-size: 1.4em;
+  }
+}
+.modal-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.3em;
+}
+@media (max-width: 767px) {
+  .modal-footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 .modal-title {
@@ -6627,23 +6643,37 @@ footer {
 }
 #dragonAllianceModal .course {
   color: #555555;
+  padding-top: 8px;
+}
+#dragonAllianceModal .course-title {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  #dragonAllianceModal .course-title {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
 }
 #dragonAllianceModal .modal-body {
-  padding-bottom: 45px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #dragonAllianceModal .modal-body {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #dragonAllianceModal .modal-body {
-    padding-bottom: 65px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
   #dragonAllianceModal .modal-body {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 /* Compiled in Codekit - modal  */
@@ -6651,7 +6681,7 @@ footer {
   unicode-bidi: bidi-override;
   direction: rtl;
   font-size: 1.3em;
-  margin-top: -7px;
+  margin-top: -2px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .rating2 {
