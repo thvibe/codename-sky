@@ -6517,17 +6517,8 @@ footer {
 }
 @media (max-width: 767px) {
   .imageMap a + p {
-    top: 88%;
+    padding-top: 22px;
   }
-}
-.imageMap button {
-  position: absolute;
-  left: 42%;
-  top: 125%;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.8em;
 }
 .imageMap:hover .hotspots {
   visibility: visible;
@@ -6677,7 +6668,8 @@ footer {
 }
 #dragonAllianceModal .course {
   color: #555555;
-  padding-top: 8px;
+  padding-top: 5px;
+  font-size: 1.2em;
 }
 #dragonAllianceModal .course-title {
   margin-top: 0px;

@@ -51,13 +51,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/Beijing.jpg": {
+	"\/public\/img\/Beijing2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 970138,
-		"inputAbbreviatedPath": "\/public\/img\/Beijing.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/Beijing.jpg",
+		"initialSize": 338613,
+		"inputAbbreviatedPath": "\/public\/img\/Beijing2.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/Beijing2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
