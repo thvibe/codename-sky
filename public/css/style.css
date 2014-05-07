@@ -6464,7 +6464,6 @@ footer {
 .imageMap a.active-stage {
   background: #E91D1F;
   z-index: 100;
-  border: 2px dotted #E91D1F !important;
   -webkit-animation-iteration-count: infinite;
   display: block !important;
 }
@@ -6541,7 +6540,6 @@ footer {
   color: #444;
 }
 .imageMap b {
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666;
   color: #FFF;
   display: block;
   position: absolute;
@@ -6549,26 +6547,26 @@ footer {
   opacity: 0.9;
   filter: alpha(opacity=20);
   font-size: 1.4em;
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  -o-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s;
 }
 .imageMap b.b1 {
-  left: 4%;
+  left: 5%;
   top: 44%;
   width: 20%;
   height: 27%;
 }
 .imageMap b.b2 {
-  left: 30%;
-  top: 57%;
+  left: 32%;
+  top: 58%;
   width: 19%;
   height: 25%;
 }
 .imageMap b.b3 {
   left: 55%;
-  top: 64%;
+  top: 65%;
   width: 15%;
   height: 26%;
 }
@@ -6591,7 +6589,8 @@ footer {
   height: 35%;
 }
 .imageMap .hotspots div:hover b {
-  width: 0;
+  color: #777777;
+  cursor: pointer;
 }
 .imageMap .hotspots div:hover p {
   display: block;
@@ -6601,7 +6600,7 @@ footer {
   z-index: 100;
   opacity: 0.3;
   filter: alpha(opacity=50);
-  border: 2px dotted #e91d1f;
+  border: 3px dotted #e91d1f;
 }
 /* Compiled in Codekit - animations  */
 .modal-body {
