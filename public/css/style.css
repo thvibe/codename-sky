@@ -6520,6 +6520,14 @@ footer {
     padding-top: 22px;
   }
 }
+@media (min-width: 1200px) {
+  .imageMap .hotspots .btn {
+    padding: 14px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+  }
+}
 .imageMap:hover .hotspots {
   visibility: visible;
 }
