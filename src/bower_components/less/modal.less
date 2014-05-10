@@ -5,10 +5,10 @@
     @media (min-width: @screen-lg-min) {font-size: 1.4em;}
   }
   .modal-footer {
-   padding-top:10px;
-   padding-bottom:10px;
-   font-size: 1.3em;
-   @media (max-width: @screen-xs-max) {padding-top:5px;padding-bottom:5px;}
+   padding-top:20px !important;
+   @media (max-width: @screen-xs-min) {padding-top:5px;padding-bottom:15px;margin-bottom:15px;font-size: 1em;}
+   @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {padding-top:5px;padding-bottom:30px;margin-bottom:25px;font-size: 1.3em;}
+   @media (min-width: @screen-lg-min) {padding-top:5px;padding-bottom:30px;margin-bottom:30px;font-size: 1.3em;}
   }
   .modal-title {
    font-size: 1.3em;
@@ -22,17 +22,42 @@
     @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {font-size: 1.2em;line-height:22px;}
     @media (min-width: @screen-lg-min) {font-size: 1.4em;line-height:24px;}
   }
+  .magictime.vanishIn {
+   -webkit-animation-duration: 1s;
+   -moz-animation-duration: 1s;
+   -o-animation-duration: 1s;
+   animation-duration: 1s;
+   }
   #dragonAllianceModal {
-
    .course {
     color: #555555;
-    padding-top:5px;
-    font-size: 1.2em;
+    padding-top:15px;
+    margin-top:10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {padding-top:25px;margin-top:25px;font-size:1.3em;}
+    @media (min-width: @screen-lg-min) {padding-top:25px;margin-top:25px;font-size:inherit;}
+    margin-top:10px;
+    strong {
+     color: @brand-info;
+     font-size: 1.1em;
+    }
+
+    button {
+     margin-top:35px;
+     text-transform:uppercase;
+     font-size: 1.3em;
+     .fa {
+      float: right;
+      padding-right:20px;
+      padding-top:2px;
+     }
+    }
    }
    .course-title {
     margin-top:0px;
-    margin-bottom: 5px;
-    @media (max-width: @screen-xs-max) {font-size:1.3em;margin-bottom:5px;}
+    @media (max-width: @screen-xs-max) {font-size:1.3em;line-height:1;}
    }
    .modal-body {
     padding-bottom: 5px;
@@ -44,3 +69,43 @@
     @media (min-width: @screen-lg-min) {padding-bottom: 30px;}
    }
   }
+  .btn3d {
+    transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    -moz-outline-style:none;
+    border:0px;
+    margin-right:10px;
+    margin-top:15px;
+}
+.btn3d:focus {
+    outline:medium none;
+    -moz-outline-style:none;
+}
+.btn3d:active {
+    top:9px;
+}
+.btn-default {
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#fff;
+}
+.btn-primary {
+    box-shadow:0 0 0 1px @brand-primary inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:@brand-primary;
+}
+ .btn-success {
+    box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#5cb85c;
+}
+ .btn-info {
+    box-shadow:0 0 0 1px @brand-info inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 darken(@brand-info,15%), 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:@brand-info;
+}
+.btn-warning {
+    box-shadow:0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #eea236, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#f0ad4e;
+}
+.btn-danger {
+    box-shadow:0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #C24032, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#c63702;
+}

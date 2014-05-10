@@ -5136,8 +5136,8 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 .modal-header {
   padding: 15px;
@@ -5788,6 +5788,31 @@ body {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+.dblclick-wrap {
+  position: relative;
+  /* For absolute positioning within */
+}
+.dblclick {
+  position: relative;
+  /* So z-index works later, but no surprises now */
+  /* background: blue; Uncomment to test coverage */
+}
+.dblclick + span {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 103%;
+  /* Gotta do this instead of right: 0; */
+  bottom: -1px;
+  z-index: 1;
+  /* background: red; Uncomment background property to test coverage */
+}
+.dblclick + span:active {
+  left: -9999px;
+}
+.dblclick:hover {
+  z-index: 2;
 }
 .btn-circle {
   width: 30px;
@@ -6462,7 +6487,7 @@ footer {
   border-radius: 10px;
 }
 .imageMap a.active-stage {
-  background: #E91D1F;
+  background: rgba(233, 29, 31, 0.2);
   z-index: 100;
   -webkit-animation-iteration-count: infinite;
   display: block !important;
@@ -6482,13 +6507,13 @@ footer {
 .imageMap a.p3 {
   left: 55%;
   top: 64%;
-  width: 15%;
+  width: 19%;
   height: 26%;
 }
 .imageMap a.p4 {
   left: 50%;
   top: 30%;
-  width: 19%;
+  width: 21%;
   height: 25%;
 }
 .imageMap a.p5 {
@@ -6528,7 +6553,7 @@ footer {
 .imageMap:hover .hotspots {
   visibility: visible;
 }
-.imageMap p strong {
+.imageMap p {
   display: block;
   padding: 0;
   margin: 0;
@@ -6546,15 +6571,20 @@ footer {
   z-index: 200;
   opacity: 0.9;
   filter: alpha(opacity=20);
-  font-size: 1.4em;
+  font-size: 1em;
   -webkit-transition: 0.35s;
   -moz-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .imageMap b {
+    font-size: 1.2em;
+  }
+}
 .imageMap b.b1 {
   left: 5%;
-  top: 44%;
+  top: 45%;
   width: 20%;
   height: 27%;
 }
@@ -6565,15 +6595,15 @@ footer {
   height: 25%;
 }
 .imageMap b.b3 {
-  left: 55%;
+  left: 57%;
   top: 65%;
-  width: 15%;
+  width: 19%;
   height: 26%;
 }
 .imageMap b.b4 {
-  left: 50%;
-  top: 30%;
-  width: 19%;
+  left: 52%;
+  top: 31%;
+  width: 21%;
   height: 25%;
 }
 .imageMap b.b5 {
@@ -6589,7 +6619,7 @@ footer {
   height: 35%;
 }
 .imageMap .hotspots div:hover b {
-  color: #777777;
+  color: #3399f3;
   cursor: pointer;
 }
 .imageMap .hotspots div:hover p {
@@ -6622,14 +6652,30 @@ footer {
   }
 }
 .modal-footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 1.3em;
+  padding-top: 20px !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .modal-footer {
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal-footer {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-footer {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
   }
 }
 .modal-title {
@@ -6672,19 +6718,55 @@ footer {
     line-height: 24px;
   }
 }
+.magictime.vanishIn {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
 #dragonAllianceModal .course {
   color: #555555;
-  padding-top: 5px;
-  font-size: 1.2em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #dragonAllianceModal .course {
+    padding-top: 25px;
+    margin-top: 25px;
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1200px) {
+  #dragonAllianceModal .course {
+    padding-top: 25px;
+    margin-top: 25px;
+    font-size: inherit;
+  }
+}
+#dragonAllianceModal .course strong {
+  color: #3399f3;
+  font-size: 1.1em;
+}
+#dragonAllianceModal .course button {
+  margin-top: 35px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+#dragonAllianceModal .course button .fa {
+  float: right;
+  padding-right: 20px;
+  padding-top: 2px;
 }
 #dragonAllianceModal .course-title {
   margin-top: 0px;
-  margin-bottom: 5px;
 }
 @media (max-width: 767px) {
   #dragonAllianceModal .course-title {
     font-size: 1.3em;
-    margin-bottom: 5px;
+    line-height: 1;
   }
 }
 #dragonAllianceModal .modal-body {
@@ -6707,6 +6789,46 @@ footer {
   #dragonAllianceModal .modal-body {
     padding-bottom: 30px;
   }
+}
+.btn3d {
+  transition: all .08s linear;
+  position: relative;
+  outline: medium none;
+  -moz-outline-style: none;
+  border: 0px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.btn3d:focus {
+  outline: medium none;
+  -moz-outline-style: none;
+}
+.btn3d:active {
+  top: 9px;
+}
+.btn-default {
+  box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+.btn-primary {
+  box-shadow: 0 0 0 1px #446e9b inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #446e9b;
+}
+.btn-success {
+  box-shadow: 0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #5cb85c;
+}
+.btn-info {
+  box-shadow: 0 0 0 1px #3399f3 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0c73cd, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #3399f3;
+}
+.btn-warning {
+  box-shadow: 0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #eea236, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f0ad4e;
+}
+.btn-danger {
+  box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c24032, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #c63702;
 }
 /* Compiled in Codekit - modal  */
 .rating2 {
