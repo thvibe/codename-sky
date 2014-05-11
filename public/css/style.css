@@ -5789,30 +5789,22 @@ body {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-.dblclick-wrap {
-  position: relative;
-  /* For absolute positioning within */
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: rgba(221, 255, 0, 0.24);
 }
-.dblclick {
-  position: relative;
-  /* So z-index works later, but no surprises now */
-  /* background: blue; Uncomment to test coverage */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
 }
-.dblclick + span {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 103%;
-  /* Gotta do this instead of right: 0; */
-  bottom: -1px;
-  z-index: 1;
-  /* background: red; Uncomment background property to test coverage */
-}
-.dblclick + span:active {
-  left: -9999px;
-}
-.dblclick:hover {
-  z-index: 2;
+.panel-primary .dropdown-menu > li > a:hover,
+.panel-primary .dropdown-menu > li > a:focus {
+  background-color: transparent;
+  color: #446e9b;
 }
 .btn-circle {
   width: 30px;
@@ -5902,34 +5894,6 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
-}
-.checkbox {
-  text-align: left;
-  color: #000;
-  font-size: 16px;
-  padding: 10px 3px 3px 3px;
-}
-.fpassword a {
-  line-height: 3em;
-  font-size: 14px;
-  color: #000;
-  text-decoration: none;
-  cursor: hand;
-}
-.vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding-top: 0px;
-}
-.vert-text h1 {
-  padding-top: 20px;
-  font-size: 5.3em;
-  font-weight: 700;
-  color: #95a5a6;
-}
-.vert-text h3 {
-  color: #95a5a6;
 }
 /**, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -6158,9 +6122,12 @@ footer {
   font-size: 1.5em;
 }
 .form-signin {
-  max-width: 320px;
+  max-width: 300px;
   padding: 15px;
   margin: 0 auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .form-signin .form-control {
   position: relative;
@@ -6197,7 +6164,12 @@ footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   background-color: rgba(255, 255, 255, 0.8);
 }
-.form-signin .form-signin-heading,
+.form-signin-well {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  margin-top: -70px;
+  padding-bottom: 0px;
+}
+.form-signin-heading,
 .form-signin {
   margin-bottom: 10px;
 }
@@ -6224,6 +6196,31 @@ a.green.button {
   -webkit-animation-name: greenPulse;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
+}
+.checkbox {
+  text-align: left;
+  padding: 10px 0px 0px 20px;
+  font-size: 1.1em;
+}
+.fpassword a {
+  line-height: 1em;
+  cursor: hand;
+}
+.omb_authTitle {
+  text-align: center;
+  line-height: 1.1em;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+.omb_authTitle a {
+  text-decoration: underline;
+}
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: -20px;
 }
 /* Compiled in Codekit - base style for a7 */
 /* Compiled in Codekit - base style for a7 */
