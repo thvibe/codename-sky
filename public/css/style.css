@@ -5789,31 +5789,6 @@ body {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-.dblclick-wrap {
-  position: relative;
-  /* For absolute positioning within */
-}
-.dblclick {
-  position: relative;
-  /* So z-index works later, but no surprises now */
-  /* background: blue; Uncomment to test coverage */
-}
-.dblclick + span {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 103%;
-  /* Gotta do this instead of right: 0; */
-  bottom: -1px;
-  z-index: 1;
-  /* background: red; Uncomment background property to test coverage */
-}
-.dblclick + span:active {
-  left: -9999px;
-}
-.dblclick:hover {
-  z-index: 2;
-}
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -6724,6 +6699,7 @@ footer {
   -o-animation-duration: 1s;
   animation-duration: 1s;
 }
+#myModal .course,
 #dragonAllianceModal .course {
   color: #555555;
   padding-top: 15px;
@@ -6733,6 +6709,7 @@ footer {
   margin-top: 10px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #myModal .course,
   #dragonAllianceModal .course {
     padding-top: 25px;
     margin-top: 25px;
@@ -6740,35 +6717,42 @@ footer {
   }
 }
 @media (min-width: 1200px) {
+  #myModal .course,
   #dragonAllianceModal .course {
     padding-top: 25px;
     margin-top: 25px;
     font-size: inherit;
   }
 }
+#myModal .course strong,
 #dragonAllianceModal .course strong {
   color: #3399f3;
   font-size: 1.1em;
 }
+#myModal .course button,
 #dragonAllianceModal .course button {
   margin-top: 35px;
   text-transform: uppercase;
   font-size: 1.3em;
 }
+#myModal .course button .fa,
 #dragonAllianceModal .course button .fa {
   float: right;
   padding-right: 20px;
   padding-top: 2px;
 }
+#myModal .course-title,
 #dragonAllianceModal .course-title {
   margin-top: 0px;
 }
 @media (max-width: 767px) {
+  #myModal .course-title,
   #dragonAllianceModal .course-title {
     font-size: 1.3em;
     line-height: 1;
   }
 }
+#myModal .modal-body,
 #dragonAllianceModal .modal-body {
   padding-bottom: 5px;
   padding-right: 10px;
@@ -6776,16 +6760,19 @@ footer {
   padding-top: 10px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #myModal .modal-body,
   #dragonAllianceModal .modal-body {
     padding-bottom: 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #myModal .modal-body,
   #dragonAllianceModal .modal-body {
     padding-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
+  #myModal .modal-body,
   #dragonAllianceModal .modal-body {
     padding-bottom: 30px;
   }
