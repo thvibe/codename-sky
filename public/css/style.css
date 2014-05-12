@@ -4988,24 +4988,24 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #3399f3;
 }
 .panel-info > .panel-heading {
-  color: #3a87ad;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: #ffffff;
+  background-color: #3399f3;
+  border-color: #3399f3;
 }
 .panel-info > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #bce8f1;
+  border-top-color: #3399f3;
 }
 .panel-info > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #bce8f1;
+  border-bottom-color: #3399f3;
 }
 .panel-warning {
   border-color: #fbeed5;
 }
 .panel-warning > .panel-heading {
-  color: #c09853;
+  color: #ffffff;
   background-color: #fcf8e3;
   border-color: #fbeed5;
 }
@@ -5019,8 +5019,8 @@ a.list-group-item-danger.active:focus {
   border-color: #eed3d7;
 }
 .panel-danger > .panel-heading {
-  color: #b94a48;
-  background-color: #f2dede;
+  color: #ffffff;
+  background-color: #cd0200;
   border-color: #eed3d7;
 }
 .panel-danger > .panel-heading + .panel-collapse .panel-body {
@@ -5791,7 +5791,7 @@ body {
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: rgba(221, 255, 0, 0.24);
+  background-color: #fcf8e3 !important;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -5801,10 +5801,24 @@ body {
 .table > tfoot > tr > td {
   vertical-align: middle;
 }
-.panel-primary .dropdown-menu > li > a:hover,
-.panel-primary .dropdown-menu > li > a:focus {
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: rgba(217, 237, 247, 0.2);
+}
+.panel-danger .dropdown-menu {
+  font-size: 1em;
+}
+.panel-danger .dropdown-menu > li > a:hover,
+.panel-danger .dropdown-menu > li > a:focus {
   background-color: transparent;
-  color: #446e9b;
+  color: #3399f3;
+}
+.panel-title {
+  font-size: 1.7em;
+  font-weight: 800;
+}
+.panel-title small {
+  color: whitesmoke;
 }
 .btn-circle {
   width: 30px;
@@ -6107,7 +6121,7 @@ i.service-icon:hover {
 }
 .call-to-action {
   color: #ffffff;
-  background: white;
+  background: #fff;
   padding: 50px 0;
 }
 .call-to-action .btn {

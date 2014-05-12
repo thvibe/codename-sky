@@ -8,16 +8,31 @@ html,body {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
-background-color: rgba(221,255,0,0.24);
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+ background-color: @state-warning-bg !important;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
  vertical-align:middle;
 }
-.panel-primary{
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+ background-color:fade(@state-info-bg,20%);
+}
+.panel-danger{
+ .dropdown-menu {
+  font-size:1em;
+ }
  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color:transparent;
-  color:@brand-primary;
+  color:@brand-info;
+ }
+}
+.panel-title {
+ font-size: 1.7em;
+ font-weight:800;
+ small {
+ color:whitesmoke;
  }
 }
 .btn-circle {
@@ -329,7 +344,7 @@ i.service-icon:hover {
 }
 .call-to-action {
     color: #ffffff;
-    background: white;
+    background: #fff;
     padding: 50px 0;
     .btn {
         margin: 10px;
