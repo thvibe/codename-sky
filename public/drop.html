@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="" name="description">
+  <meta content="Jonathan Paul Guidice" name="author">
+
+  <title>a7 version2 alpha</title><!-- a7 core CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://releases.flowplayer.org/5.4.6/skin/minimalist.css">
+  <link href="css/magic.min.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+  <style>
+  #products { float:left; width: 500px; margin-right: 2em; }
+  #cart { width: 100%; float: left; margin-top: 1em; }
+  /* style the list to maximize the droppable hitarea */
+  #cart ol { margin: 0; padding: 1em 0 10em 3em; }
+  </style>
+  <script>
+  $(function() {
+    $( "#catalog" ).accordion();
+    $( "#catalog li" ).draggable({
+      appendTo: "body",
+      helper: "clone"
+    });
+    $( "#cart ol" ).droppable({
+      activeClass: "ui-state-default",
+      hoverClass: "ui-state-hover",
+      accept: ":not(.ui-sortable-helper)",
+      drop: function( event, ui ) {
+        $( this ).find( ".placeholder" ).remove();
+        $( "<li></li>").text( ui.draggable.text() ).appendTo( this );
+      }
+    }).sortable({
+      items: "li:not(.placeholder)",
+      sort: function() {
+        // gets added unintentionally by droppable interacting with sortable
+        // using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+        $( this ).removeClass( "ui-state-default" );
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Subjects</h3>
+  </div>
+  <div class="panel-body">
+    <div id="catalog">
+      <h3><a href="#">English</a></h3>
+      <div>
+        <ul>
+          <li>Cambridge English</li>
+          <li>Sichuan Province English</li>
+          <li>Guangdong Province English</li>
+        </ul>
+      </div>
+      <h3><a href="#">Math</a></h3>
+      <div>
+        <ul>
+          <li>Book Name</li>
+          <li>Book Name</li>
+          <li>Book Name</li>
+        </ul>
+      </div>
+      <h3><a href="#">Science</a></h3>
+      <div>
+        <ul>
+          <li>Book Name</li>
+          <li>Book Name</li>
+          <li>Book Name</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Students Backpack</h3>
+  </div>
+  <div class="panel-body">
+    <div id="cart" class="panel-body ui-widget-content" >
+
+          <ol>
+            <li class="placeholder">Add your items here</li>
+          </ol>
+         </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
