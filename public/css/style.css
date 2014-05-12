@@ -5005,7 +5005,7 @@ a.list-group-item-danger.active:focus {
   border-color: #fbeed5;
 }
 .panel-warning > .panel-heading {
-  color: #ffffff;
+  color: #c09853;
   background-color: #fcf8e3;
   border-color: #fbeed5;
 }
@@ -6121,7 +6121,7 @@ i.service-icon:hover {
 }
 .call-to-action {
   color: #ffffff;
-  background: #fff;
+  background: whitesmoke;
   padding: 50px 0;
 }
 .call-to-action .btn {
