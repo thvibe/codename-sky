@@ -5805,6 +5805,20 @@ body {
 .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: rgba(217, 237, 247, 0.2);
 }
+.panel-danger .pagination {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .panel-danger .pagination {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .panel-danger .panel-body {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
 .panel-danger .dropdown-menu {
   font-size: 1em;
 }
