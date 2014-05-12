@@ -29,6 +29,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/drop.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/drop.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/img\/a7_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -36,6 +45,17 @@
 		"initialSize": 43863,
 		"inputAbbreviatedPath": "\/public\/img\/a7_logo.png",
 		"outputAbbreviatedPath": "\/public\/img\/a7_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/backpack.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11228,
+		"inputAbbreviatedPath": "\/public\/img\/backpack.png",
+		"outputAbbreviatedPath": "\/public\/img\/backpack.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
